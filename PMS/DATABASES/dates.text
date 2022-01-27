@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS drive_date;
+
+create table drive_date(
+date_Slot date primary key,
+c_id int NOT NULL,
+flag BOOL DEFAULT false,
+constraint dt_fk foreign key(c_id) references company(id)
+ON DELETE CASCADE
+ON UPDATE CASCADE
+);
+
+
+insert into drive_date values('2017-01-06',1,TRUE);
+insert into drive_date values('2017-02-17',2,TRUE);
+insert into drive_date values('2017-03-08',3,TRUE);
+insert into drive_date values('2017-03-02',4,TRUE);

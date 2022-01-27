@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CompanyRegistrationForm</title>
+
+    <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+	form{
+	width:600px;
+	height:550px;
+	//border-style:solid;
+	//border-width:1px;
+	}
+	body{
+	background-image:images\reg.jpg;
+	//background:"background.jpg";
+	
+	}
+	label{
+	font-size:17px;
+	}
+	input[type='text']:hover,input[type='passowrd']:hover{
+background:lightblue;
+
+}
+h1{
+color:cyan;
+}
+	</style>
+	</head>
+<body background="city.jpg">
+<div class="container">
+<div class="row">
+<div class="col-xs-10 col-xs-offset-2">
+		<h1>Company Registration Form</h1>
+	<form role="form" action="http://www.facebook.com">
+		<div class="form-group">
+		<label for="name">Name</label>
+			<input type="text" class="form-control" name="name" placeholder="enter Company name" required/>
+		</div>
+		<div class="form-group">
+		<label for="id">company Id</label>
+			<input type="text" class="form-control" name="id" placeholder="enter company Id" required/>
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="email" class="form-control" name="email" size="15" placeholder="enter your email" required/>
+		</div>
+		<div class="form-group">
+			<label for="password">password</label>
+			<input type="text" class="form-control" name="password" size="15" placeholder="enter your password" required/>
+		</div>
+		
+		<div class="form-group">
+			<label for="phone">Mobile Number</label>
+			<input type="text" class="form-control" name="mobileNumber" placeholder="Enter Your mobile number"required/>
+			
+		</div>
+		<div class="form-group">
+			<table class="table table-striped table-bordered table-hover table-condensed">
+			<caption><strong>Enter qualifying criteria for selecting students</strong></caption>
+			<thead>
+				<tr>
+					<th>Qualification</th>
+					<th>marks(%)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="active">
+					<td>SSC(10<sup>th</sup>)</td>
+					<td><input type="text" name="ssc"size="6" required/></td>
+				</tr>
+				<tr class="active">
+					<td>HSC(12<sup>th</sup>)</td>
+					<td><input type="text" name="hsc"size="6" required/></td>
+				</tr>
+				<tr class="active">
+					<td>SSC(10<sup>th</sup>)</td>
+					<td><input type="text" name="grad" size="6" required/></td>
+				</tr>
+			</tbody>	
+			</table>
+		</div>
+		<div class="form-group">
+			<label for="package">package</label>
+			<input type="text" class="form-control" name="package" placeholder="enter package details" required/>
+		</div>
+		<div class="form-group">
+			<label for="profile">select profile</label>
+			<select class="form-control" id="select">
+				<option>c</option>
+				<option>c++</option>
+				<option>Java</option>
+				<option>Asp.Net</option>
+				<option>Web developer</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="Description">Description</label>
+			<textarea class="form-control" rows="5" id="description" required></textarea>
+		</div>
+		
+		<input type="submit" class="btn btn-primary btn btn-lg" value="submit"/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset" class="btn btn-danger btn btn-lg" value="cancel"/>
+		
+		
+	</form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS result;
+
+create table result(
+s_no int primary key auto_increment,
+s_id int NOT NULL,
+constraint rst_fk foreign key(s_id) references student(roll_number)
+ON DELETE CASCADE
+ON UPDATE CASCADE
+);
+
+insert into result values(1,1);
+insert into result values(2,3);
+insert into result values(3,4);
+insert into result values(4,5);

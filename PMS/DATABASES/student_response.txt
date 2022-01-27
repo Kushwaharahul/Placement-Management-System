@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS student_response;
+
+create table student_response(
+s_no int primary key auto_increment,
+s_id int NOT NULL,
+q_id int NOT NULL,
+correct_choice varchar(1) NOT NULL,
+constraint sr_fk1 foreign key(q_id) references paper(s_no),
+constraint sr_fk2 foreign key(s_id) references student(roll_number)
+ON DELETE CASCADE
+ON UPDATE CASCADE
+);
+
+
+
+insert into student_response values(1,1,1,'a');
+insert into student_response values(2,1,2,'d');
+insert into student_response values(4,1,4,'a');
+insert into student_response values(5,1,5,'b');

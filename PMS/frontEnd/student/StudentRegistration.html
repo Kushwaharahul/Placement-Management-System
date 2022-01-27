@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StudentRegistration</title>
+
+    <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+	form{
+	width:600px;
+	height:550px;
+	//border-style:solid;
+	//border-width:1px;
+	}
+	body{
+	background-image:images\reg.jpg;
+	//background:"background.jpg";
+	
+	}
+	label{
+	font-size:17px;
+	}
+	input[type='text']:hover,input[type='passowrd']:hover{
+background:lightblue;
+
+}
+	</style>
+	</head>
+<body background="images\reg.jpg">
+<div class="container">
+<div class="row">
+<div class="col-md-10 col-md-offset-2">
+		<h1>Student Registration Form</h1>
+	<form role="form" action="http://www.facebook.com">
+		<div class="form-group">
+		<label for="name">Name</label>
+			<input type="text" class="form-control" name="name" placeholder="enter your name" required/>
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="text" class="form-control" name="email" size="15" placeholder="enter your email" required/>
+		</div>
+		<div class="form-group">
+			<label for="rollnumber">Roll Number</label>
+			<input type="text" class="form-control" name="rollNumber" placeholder="Enter Your roll number" required/>
+			
+		</div>
+		<div class="form-group">
+			<label for="phone">Mobile Number</label>
+			<input type="text" class="form-control" name="mobileNumber" placeholder="Enter Your mobile number"required/>
+			
+		</div>
+		<div class="form-group">
+			<label for="ssc">SSC marks(10<sup>th</sup>)</label>
+			<input type="text" class="form-control" name="ssc" placeholder="Enter Your secondary school certificate marks in %" required/>
+			
+		</div>
+		<div class="form-group">
+			<label for="hsc">HSC(12<sup>th</sup>) marks</label>
+			<input type="text" class="form-control" name="hsc" placeholder="Enter Your higher secondary certificate marks in %"required />
+			
+		</div>
+		<div class="form-group">
+			<label for="grad">Graduation marks</label>
+			<input type="text" class="form-control" name="grad" placeholder="Enter Your graduation marks in %" required/>
+			
+		</div>
+		<input type="submit" class="btn btn-primary btn btn-lg" value="submit"/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset" class="btn btn-danger btn btn-lg" value="cancel"/>
+		
+		
+	</form>
+
+</div>
+</body>
+</html>
